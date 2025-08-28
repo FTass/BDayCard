@@ -1,29 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('https://i.imgur.com/4AiXzf8.jpeg') no-repeat center center fixed;
+
   background-size: cover;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-
-}
-
-.center-content {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-}
-.game-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  padding: 20px;
-  box-sizing: border-box;
-  position: inherit;
-  flex-direction: column;
-}
-.game-container :nth-child(n){
-    margin-bottom: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  transition: background-color 1s ease;
 }
 
 .dialog-box {
@@ -43,26 +24,49 @@ body {
 
 #next-btn {
   background-color: #ff69b4;
-  
+  transition: all 0, 3s ease;
   color: white;
+  transform: scale(1);
   font-size: 16px;
   border: none;
   border-radius: 6px;
   padding: 8px 16px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #next-btn:hover {
   background-color: #ff1493;
+  transform: scale(1.05); /* Agranda el botón */
 }
-.fondo-img {
-    display: grid;
-    
-    justify-content: center;
-    margin-top: 10%;
+
+#next-btn:active {
+  transform: rotateX(15deg) scale(0.95);
 }
+
 #f1 {
-    max-width: 400px;
-    max-height: 400px;
+  max-width: 400px;
+  max-height: 400px;
 }
+
+
+.my-card {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  width: 30vw;
+  max-width: 90%;
+  
+}
+
+.img-fluid {
+  display: block;
+  max-width: 30vw;
+  width: 30vw;
+  border: 2px solid black;
+  object-fit: cover; /* o contain,
+   según cómo quieras que se recorte */
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* style="max-height: 50vh; min-width: 20vw; object-fit: contain;"  */

@@ -12,32 +12,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
-  <audio id="bg-music" loop>
-    <source src="audio/peanuts.mp3" type="audio/mpeg">
-  </audio>
-  <div class="container d-flex justify-content-center">
-    <div class="row">
-      <div class="col-12">
-        <img id="f1" src="" alt="pucha">
+<body class="bg-light">
 
-      </div>
-    </div>
-  </div>
-  <div class="center-content">
-    <div class="game-container">
-      <div class="fondo-img">
-      </div>
-      <div class="dialog-box">
+  <audio id="bg-music" loop>
+    <source src="audio/FixYou.mp3" type="audio/mpeg">
+  </audio>
+  
+  <div class="d-flex  flex-column justify-content-center align-items-center min-vh-100">
+    <img class="img-fluid mb-4" id="f1" src="" alt="pucha" />
+    <div class="card my-card text-center border border-dark bg-light" >
+      <div class="card-body ">
         <p id="dialog-text">...</p>
-        <button id="next-btn">
-          Siguiente
+        <button class="btn btn-primary" type="button" id="next-btn">
+          <span id="btn-text">Siguiente</span>
         </button>
       </div>
     </div>
+
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
