@@ -2,26 +2,34 @@ export const escenas = [
   {
     texto: "🎂 ¡Hola, mi amor! Hoy es un día muy especial...",
     imagen: "images/fondo-1.jpg",
+    
   },
   {
     texto: "✨ Porque hoy celebramos que el mundo te tiene a ti.",
     imagen: "images/fondo-2.jpg",
+ 
+
   },
   {
     texto: "🐶 Estaba pensando... ¿y si hacemos algo distinto?",
     imagen: "images/fondo-3.jpg",
+  
   },
   {
     texto: "🎁 Tengo algo preparado para ti, pero primero...",
     imagen: "images/fondo-4.jpg",
+   
   },
   {
     texto: "💬 Quiero contarte una pequeña historia...",
     imagen: "images/fondo-5.jpg",
+    
   },
   {
     texto: "👉 Comencemos esta mini aventura.",
     imagen: "images/fondo-6.jpg",
+
+  
   },
   {
     texto: "🐧 Había una vez, un pequeño 'que' muy fanático de los pingüinos árticos.",
@@ -31,6 +39,7 @@ export const escenas = [
   {
     texto: "🌐 Ese 'que' andaba husmeando en las malvadas redes sociales...",
     imagen: "images/fondo-7.jpg",
+    color: "#f0f8ff"
   },
   {
     texto: "🌞 Y de pronto, apareció el 'so' en su camino.",
@@ -63,6 +72,7 @@ export const escenas = [
   {
     texto: "💖 El 'que' le enseñó al 'so' a amar. No solo a ella, sino a la vida, a lo que lo rodeaba y a nunca bajar la cabeza.",
     imagen: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2MzMW45eTB4cXlzanB2NGlkdGYydGJwZzZubWh6bjRhbHF1a3FlMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7k3ThwwMXnHCE/giphy.webp",
+    color: "#768acaff"
   },
   {
     texto: "⏳ Hoy, el 'so' está trabajando para que cada día que pase, sea un día menos para cumplir las metas que tienen.",
