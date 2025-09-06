@@ -5,6 +5,10 @@ body {
   background-size: cover;
   font-family: "Comic Sans MS", cursive, sans-serif;
   transition: background-color 1s ease;
+  background-color: #f0f8ff; /* Color de fondo inicial */
+  overflow-x: hidden;
+
+
 }
 
 .dialog-box {
@@ -15,19 +19,31 @@ body {
   width: 90%;
   max-width: 500px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 20px auto;
+  backdrop-filter: blur(5px);
+  
 }
 
 #dialog-text {
-  font-size: 18px;
+  font-size: 2vw;
   margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+  font-weight: bold;
+
 }
 
 #next-btn {
+  
   background-color: #ff69b4;
   transition: all 0, 3s ease;
   color: white;
+  width: auto;
   transform: scale(1);
-  font-size: 16px;
+  font-size: 2vw;
   border: none;
   border-radius: 6px;
   padding: 8px 16px;
@@ -35,26 +51,38 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
 }
 
 #next-btn:hover {
   background-color: #ff1493;
   transform: scale(1.05); /* Agranda el botón */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 65px 70px,
+    rgba(0, 0, 0, 0.22) 0px -15px 40px, rgba(0, 0, 0, 0.22) 0px 6px 8px,
+    rgba(0, 0, 0, 0.25) 0px 15px 16px, rgba(0, 0, 0, 0.13) 0px -4px 6px;
+
 }
 
 #next-btn:active {
   transform: rotateX(15deg) scale(0.95);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 35px,
+    rgba(0, 0, 0, 0.15) 0px -7px 18px, rgba(0, 0, 0, 0.15) 0px 3px 5px,
+    rgba(0, 0, 0, 0.2) 0px 8px 9px, rgba(0, 0, 0, 0.1) 0px -2px 3px;
 }
 
-#f1 {
-  max-width: 400px;
-  max-height: 400px;
-}
 
 
 .my-card {
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   width: 30vw;
+  height: auto;
+  border-radius: 12px;  
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 10px; 
+
   max-width: 90%;
   
 }
@@ -63,10 +91,15 @@ body {
   display: block;
   max-width: 30vw;
   width: 30vw;
+
+
+  max-height: 50vh;
   border: 2px solid black;
   object-fit: cover; /* o contain,
    según cómo quieras que se recorte */
    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  
+
 }
 
 /* style="max-height: 50vh; min-width: 20vw; object-fit: contain;"  */
