@@ -18,9 +18,15 @@ function mostrarEscena() {
     indice++;
   } else {
     textoElemento.textContent =
-      "🎉 ¡Fin de la introducción! (Aquí puede aparecer tu tarjeta o continuar la historia)";
+      "Abre tu presente";
     botonSiguiente.disabled = true;
+
     botonSiguiente.textContent = "✨";
+
+    botonSiguiente.addEventListener("click", function() {
+
+    window.location.href = "card.html";
+  });
   }
 }
 

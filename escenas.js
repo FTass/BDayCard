@@ -72,7 +72,7 @@ export const escenas = [
   {
     texto: "💖 El 'que' le enseñó al 'so' a amar. No solo a ella, sino a la vida, a lo que lo rodeaba y a nunca bajar la cabeza.",
     imagen: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2MzMW45eTB4cXlzanB2NGlkdGYydGJwZzZubWh6bjRhbHF1a3FlMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7k3ThwwMXnHCE/giphy.webp",
-    color: "#768acaff"
+    color: "#849ae2ff"
   },
   {
     texto: "⏳ Hoy, el 'so' está trabajando para que cada día que pase, sea un día menos para cumplir las metas que tienen.",
@@ -81,6 +81,7 @@ export const escenas = [
   {
     texto: "🌈 El 'so' te ama mucho.",
     imagen: "images/fondo-16.jpg",
+    color: "#b9aa8aff"
 
   },
 ];

@@ -1,0 +1,73 @@
+body {
+  /* opacity: 0; */
+
+  transition: opacity 0.5s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+p {
+  font-size: 2vw;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+.card {
+  padding: 12vw;
+  border: 2px solid #412533;
+  box-shadow: 0 0 10px #000000;
+  border-radius: 15px;
+  background: rgba(165, 33, 33, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+
+  
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 0.7);
+}
+
+#btn-confeti {
+  margin-top: 3vh;
+  border-radius: 12px;
+  background-color: #ff69b4;
+  color: white;
+  margin-bottom: 1vh;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#snoopy-bd {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 60vw;
+    max-width: 40vw;
+    animation: dance 2.5s infinite ease-in-out;
+}
+#h-bday {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px #aaa;
+  font-size: 4vw;
+  margin-top: 0px;
+}
+@keyframes dance {
+  0%,
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-5deg);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

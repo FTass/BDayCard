@@ -4,13 +4,17 @@ body {
 
   background-size: cover;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  transition: background-color 1s ease;
+  transition: opacity 0.5s ease, background-color 1s ease;
   background-color: #f0f8ff; /* Color de fondo inicial */
   overflow-x: hidden;
+  opacity: 1;
+  
 
 
 }
-
+body.fade-out {
+  opacity: 0;
+}
 .dialog-box {
   background-color: rgba(255, 255, 255, 0.9);
   border: 3px solid #000;
