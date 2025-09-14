@@ -10,28 +10,195 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles/cardstyle.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
-    
- 
-        
-       
-        <div class="row">   
+        <audio id="bg-music" loop>
+    <source src="audio/peanuts.mp3" type="audio/mpeg">
+  </audio>
+  
+    <div class="row">   
             
-            <div class="card">
+            <div class="card text-center" id="card-1">
                 <div class="card-body">
                     <img  id="snoopy-bd" class="img-fluid" src="images/tarjeta/card-img.png" alt="">
                     <h1 id="h-bday">¡Feliz Cumpleaños!</h1>
                     <div class="container">
-                        <button id="btn-confeti" >¡Lanzar confeti!</button>
-                       
+                        <div class="row d-flex justify-content-end">
+                            <div class="col-12 text-end">    
+                                <button  id="btn-open" class="btn-open">&#8250</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card-2" class="card text-center d-none">
+                <div class="card-body">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <img id="snoopy-bd" class="img-fluid" src="images/tarjeta/descarga.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <p>En este dia tan especial, quiero recordarte lo mucho que te amo,
+                                lo agradecido que estoy por tenerte en mi vida y lo emocionado que estoy por compartir 
+                                muchos más experiencias junto a ti. 
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">    
+                            <button 
+                            class="btn-modal"
+                            data-bs-toggle="modal"
+                            data-bs-target="#msg-modal-1"
+                            id="mdl-btn"
+                            >
+                                <i class="fa-solid fa-message"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4">    
+                            <button 
+                            class="btn-modal"
+                            data-bs-toggle="modal"
+                            data-bs-target="#msg-modal-2"
+                            id="mdl-btn"
+                            >
+                                
+                                &#10084;
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4">    
+                            <button 
+                            class="btn-modal"
+                            data-bs-toggle="modal"
+                            data-bs-target="#msg-modal-3"
+                            id="mdl-btn"
+                            >
+                                ✨
+                            </button>
+                        </div>
+
+                   
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                            <div class="col-12 text-end">    
+                                <button  id="btn-exit" class="btn-open">&#8250</button>
+                            </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div id="card-3" class="card text-center d-none">
+                <div class="card-body">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <img id="snoopy-bd" class="img-fluid" src="images/tarjeta/card-final.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <p>
+                                Por un añito mas, lleno de aventuras y hermosas historias por contar.
+                            </p>
+                            <p>
+                                Por parte de tu pololo, tu Tuto, que te ama mucho, <em>Feliz Cumpleaños</em>.
+                            </p>
+                        </div>
                     </div>
                     
                 </div>
+            
             </div>
-     
-    </div>
+        <div class="modal fade" id="msg-modal-1" tabindex="-1" aria-labelledby="layoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body bg-light  p-0">
+                    <div class="border-layout p-4">
+                    <img class="img-fluid nw corner" src="images/tarjeta/ne (1).png" alt="Esquina NW">
+                    <img class="img-fluid ne corner" src="images/tarjeta/ne (2).png" alt="Esquina NE">
+                    <img class="img-fluid sw corner" src="images/tarjeta/ne (3).png" alt="Esquina SW">
+                    <img class="img-fluid se corner" src="images/tarjeta/ne (4).png" alt="Esquina SE">
+                    <div class="center text-center">
+                        
+                        <p>
+                            He estado contigo tanto tiempo, y puedo decirte que por mucho que las cosas se pongan dificiles,
+                            he visto como has podido salir adelante sin importar que. Quizas tu no lo veas, pero la fortaleza que 
+                            has construido como persona es inmensa, estoy orgulloso de ti&#10084;
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="msg-modal-2" tabindex="-1" aria-labelledby="layoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body bg-light p-0">
+                    <div class="border-layout p-4">
+                    <img class="img-fluid nw corner" src="images/tarjeta/m2-e.png" alt="Esquina NW">
+                    <img class="img-fluid ne corner" src="images/tarjeta/m2-s.png" alt="Esquina NE">
+                    <img class="img-fluid sw corner" src="images/tarjeta/m2-n.png" alt="Esquina SW">
+                    <img class="img-fluid se corner" src="images/tarjeta/m2-o.png" alt="Esquina SE">
+                    <div class="center text-center">
+                        
+                        <p>
+                            Es un añito mas de vida amor, un añito mas donde puedo verte crecer,
+                            mejorar y donde cava vez mas, me doy cuenta de que eres la persona con la que 
+                            quiero pasar toda la vida &#10084;
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="msg-modal-3" tabindex="-1" aria-labelledby="layoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body bg-light p-0">
+                    <div class="border-layout p-4">
+                    <img class="img-fluid nw corner" src="images/tarjeta/m3-e.png" alt="Esquina NW">
+                    <img class="img-fluid ne corner" src="images/tarjeta/m3-s.png" alt="Esquina NE">
+                    <img class="img-fluid sw corner" src="images/tarjeta/m3-n.png" alt="Esquina SW">
+                    <img class="img-fluid se corner" src="images/tarjeta/m3-o.png" alt="Esquina SE">
+                    <div class="center text-center">
+                        
+                        <p>
+                            <b>¿Sabes?</b> nos queda muy poquito para llegar al final de un camino que emprendimos juntos, tu sabes cual es.
+                            Es cuestion de tiempo para que finalmente, podamos tener nuestro hogar, nuestra casita y quiero que sepas que ansio
+                            ese dia. El hecho de poder verte al despertar, o saber que despues de un dia malo, te encontrare en la casita, me da fuerza,
+                            coraje y ganas de seguir adelante. Quiero ser lo mismo para ti, quiero que sepas que por muy malo que este el momento, siempre estare ahi contigo &#10084;
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div> 
     <script src="cardscript.js"></script>
 </body>
 </html>
+
+
+<!-- Botón -->
