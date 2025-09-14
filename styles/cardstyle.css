@@ -13,7 +13,7 @@ p {
   color: #333;
   text-align: center;
   margin-top: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS",  monospace;
 }
 
 .btn-modal {
@@ -24,6 +24,7 @@ p {
     border: 1px solid gainsboro;
     background-color: aquamarine;
     transition: 0.1s;
+    margin: 2vw;
 }
 .btn-modal:hover {
     transform: scale(1.1);
