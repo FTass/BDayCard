@@ -17,7 +17,7 @@ p {
 }
 
 .btn-modal {
-    width: 5vw;
+    width: 100%;
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-radius: 10px;
@@ -29,6 +29,7 @@ p {
 .btn-modal:hover {
     transform: scale(1.1);
     background-color: aqua;
+
 }
 
 
